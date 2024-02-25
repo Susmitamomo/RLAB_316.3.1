@@ -1,0 +1,39 @@
+body {
+    background-color: #413f3f; /* Set background color for the whole page */
+    font-family: Arial, sans-serif; /* Use a common sans-serif font */
+}
+
+header, #top-menu {
+    position: relative;
+    background-color: teal; /* Set background color for upper nav bar */
+    height: 60px; /* Set height of upper nav bar */
+}
+
+#top-menu {
+    z-index: 20;
+    width: 100%; /* Set full width for upper nav bar */
+}
+
+#sub-menu {
+    width: 100%;
+    z-index: 10;
+    transition: top 0.5s ease-out;
+    background-color: rgb(17, 143, 137); /* Set background color for lower nav bar */
+    height: 40px; /* Set height of lower nav bar */
+}
+
+nav a {
+    font-size: 16px; /* Set font size for menu options */
+    padding: 10px 20px; /* Add padding around menu options */
+    color: #fff; /* Set text color for menu options */
+    text-decoration: none; /* Remove underline from menu options */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+nav a:hover {
+    background-color: #006666; /* Darken background color on hover */
+}
+
+nav a.active {
+    background-color: #003333; /* Darker background color for active option */
+}
